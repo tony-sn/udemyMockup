@@ -10,4 +10,36 @@ body {
   color: #29303b;
   background-color: #fff;
 }
+
+.myNavBar .myNavBar__left {
+  display: flex;
+  align-items: center;
+}
+
+.myNavBar .myNavBar__left .navbar-brand {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 0;
+}
+
+.myNavBar .myNavBar__left .navbar-brand img {
+  width: 110px;
+}
+
+.myNavBar .myNavBar__left .myNavBar__categories {
+  flex-grow: 1;
+  text-align: center;
+  color: #505753;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.myNavBar .myNavBar__left .myNavBar__categories i {
+  color: #a1a7b3;
+}
+
+.myNavBar .myNavBar__left .myNavBar__form-search {
+  flex-grow: 8;
+}
 /*# sourceMappingURL=main.css.map */

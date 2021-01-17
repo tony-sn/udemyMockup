@@ -1,0 +1,14 @@
+// no parameter
+
+@mixin styleText {
+    color: white;
+    font-size: 13px;
+}
+
+// with parameter
+
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}

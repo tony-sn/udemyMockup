@@ -1,0 +1,26 @@
+.myNavBar {
+    .myNavBar__left {
+        display: flex;
+        align-items: center;
+        .navbar-brand {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 0;
+            img {
+                width: 110px;
+            }
+        }
+        .myNavBar__categories {
+            flex-grow: 1;
+            text-align: center;
+            @include styleText($color-black-light, $fs-1, $fw-0);
+            cursor: pointer;
+            i {
+                color: $color-gray-3;
+            }
+        }
+        .myNavBar__form-search {
+            flex-grow: 8;
+        }
+    }
+}
