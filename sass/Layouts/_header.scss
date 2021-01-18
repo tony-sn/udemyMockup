@@ -1,4 +1,5 @@
 .myNavBar {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
     .myNavBar__left {
         display: flex;
         align-items: center;
@@ -21,6 +22,50 @@
         }
         .myNavBar__form-search {
             flex-grow: 8;
+            .input-group {
+                background-color: $color-white-cream;
+                .form-control {
+                    background-color: transparent;
+                    border-color: transparent;
+                    box-shadow: none;
+                    transition: none;
+                    color: $color-black-light;
+                    &::placeholder {
+                        color: $color-black-light;
+                    }
+                    &:focus {
+                        background-color: $color-white-0;
+                        border-top-color: $color-gray-4;
+                        border-left-color: $color-gray-4;
+                        border-bottom-color: $color-gray-4;
+                    }
+                    // +
+                    &:focus + .input-group-append {
+                        .input-group-text {
+                            background-color: $color-white-0;
+                            border-top-color: $color-gray-4;
+                            border-right-color: $color-gray-4;
+                            border-bottom-color: $color-gray-4;
+                            color: $color-red-0;
+                            &:hover {
+                                color: $color-white-0;
+                                background-color: $color-red-0;
+                            }
+                        }
+                    }
+                }
+                .input-group-append {
+                    .input-group-text {
+                        background-color: transparent;
+                        border-color: transparent;
+                        color: $color-red-0;
+                        &:hover {
+                            color: $color-white-0;
+                            background-color: $color-red-0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
