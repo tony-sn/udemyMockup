@@ -1,3 +1,9 @@
+.carousel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -150,6 +156,11 @@ body {
   transform: rotate(45deg);
 }
 
+.myNavBar .myNavBar__right .navbar-nav .nav-item .overlay button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .myNavBar .myNavBar__right .navbar-nav .myNavBar__cart {
   width: 50px;
   height: 50px;
@@ -195,5 +206,14 @@ body {
   color: #fff;
   background-color: #521822;
   border: 1px solid #521822;
+}
+
+.carousel {
+  background-image: url("../../img/cover.jpg");
+  height: 500px;
+}
+
+.carousel .carousel__content {
+  max-width: 500px;
 }
 /*# sourceMappingURL=main.css.map */
