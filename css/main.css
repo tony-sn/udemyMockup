@@ -15,6 +15,10 @@ body {
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
 
+.myNavBar .myNavBar__col {
+  padding-left: 0;
+}
+
 .myNavBar .myNavBar__left {
   display: flex;
   align-items: center;
@@ -99,14 +103,66 @@ body {
   align-items: center;
 }
 
+.myNavBar .myNavBar__right .navbar-nav .nav-item {
+  padding: 7px 5px;
+  border-radius: 3px;
+  position: relative;
+}
+
 .myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
   color: #505753;
   font-size: 13px;
   font-weight: normal;
 }
 
+.myNavBar .myNavBar__right .navbar-nav .nav-item:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.myNavBar .myNavBar__right .navbar-nav .nav-item:hover .overlay {
+  display: block;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .nav-item .overlay {
+  display: none;
+  background-color: #fff;
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  box-shadow: 0 4px 16px 0 rgba(20, 23, 28, 0.25);
+}
+
+.myNavBar .myNavBar__right .navbar-nav .nav-item .overlay::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: block;
+  border-top: 1px solid rgba(20, 23, 28, 0.05);
+  border-left: 1px solid rgba(20, 23, 28, 0.05);
+  position: absolute;
+  top: -8px;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__cart {
+  width: 50px;
+  height: 50px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+
 .myNavBar .myNavBar__right .navbar-nav .myNavBar__cart .nav-link {
   font-size: 20px;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__btn:hover {
+  background-color: transparent;
 }
 
 .btn--white {
