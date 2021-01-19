@@ -68,4 +68,20 @@
             }
         }
     }
+    .myNavBar__right {
+        .navbar-nav {
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    @include styleText($color-black-light, $fs-1, $fw-0);
+                }
+            }
+            .myNavBar__cart {
+                .nav-link {
+                    font-size: $fs-3 + 2;
+                }
+            }
+        }
+    }
 }
