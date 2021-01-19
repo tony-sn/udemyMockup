@@ -44,7 +44,7 @@
                         .input-group-text {
                             background-color: $color-white-0;
                             border-top-color: $color-gray-4;
-                            border-right-color: $color-gray-4;
+                            border-right-color: $color-gray-4; // reversed with above case
                             border-bottom-color: $color-gray-4;
                             color: $color-red-0;
                             &:hover {
