@@ -209,7 +209,7 @@ body {
 }
 
 .carousel {
-  background-image: url("../../img/cover.jpg");
+  background-image: url("../img/cover.jpg");
   height: 500px;
   position: relative;
 }
@@ -232,5 +232,52 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: normal;
+}
+
+.carousel .carousel__content .carousel__form .input-group {
+  background-color: #fff;
+}
+
+.carousel .carousel__content .carousel__form .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transition: none;
+  color: #505753;
+}
+
+.carousel .carousel__content .carousel__form .input-group .form-control::placeholder {
+  color: #505753;
+}
+
+.carousel .carousel__content .carousel__form .input-group .form-control:focus {
+  background-color: #fff;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.carousel .carousel__content .carousel__form .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #fff;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  color: #ec5252;
+}
+
+.carousel .carousel__content .carousel__form .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.carousel .carousel__content .carousel__form .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.carousel .carousel__content .carousel__form .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */
