@@ -26,50 +26,8 @@
         }
         .myNavBar__form-search {
             flex-grow: 8;
-            .input-group {
-                background-color: $color-white-cream;
-                .form-control {
-                    background-color: transparent;
-                    border-color: transparent;
-                    box-shadow: none;
-                    transition: none;
-                    color: $color-black-light;
-                    &::placeholder {
-                        color: $color-black-light;
-                    }
-                    &:focus {
-                        background-color: $color-white-0;
-                        border-top-color: $color-gray-4;
-                        border-left-color: $color-gray-4;
-                        border-bottom-color: $color-gray-4;
-                    }
-                    // +
-                    &:focus + .input-group-append {
-                        .input-group-text {
-                            background-color: $color-white-0;
-                            border-top-color: $color-gray-4;
-                            border-right-color: $color-gray-4; // reversed with above case
-                            border-bottom-color: $color-gray-4;
-                            color: $color-red-0;
-                            &:hover {
-                                color: $color-white-0;
-                                background-color: $color-red-0;
-                            }
-                        }
-                    }
-                }
-                .input-group-append {
-                    .input-group-text {
-                        background-color: transparent;
-                        border-color: transparent;
-                        color: $color-red-0;
-                        &:hover {
-                            color: $color-white-0;
-                            background-color: $color-red-0;
-                        }
-                    }
-                }
-            }
+            // Search form customise
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4);
         }
     }
     .myNavBar__right {
@@ -101,6 +59,8 @@
                     top: 60px;
                     border-top: 1px solid $color-gray-1;
                     box-shadow: 0 4px 16px 0 $color-gray-5;
+
+                    // Create arrow before div
                     &::before {
                         content: "";
                         width: 15px;
