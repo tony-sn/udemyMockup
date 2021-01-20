@@ -176,6 +176,33 @@ body {
   background-color: transparent;
 }
 
+.intro {
+  background: linear-gradient(-45deg, #ec5252, #6e1a52);
+  padding: 20px;
+}
+
+.intro .intro__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro .intro__content .intro__icon {
+  font-size: 50px;
+  color: #fff;
+}
+
+.intro .intro__content .intro__details p:first-child {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.intro .intro__content .intro__details p:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
@@ -279,5 +306,9 @@ body {
 .carousel .carousel__content .carousel__form .input-group .input-group-append .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+
+.carousel .carousel__content .carousel__form .input-group {
+  border-radius: 3px;
 }
 /*# sourceMappingURL=main.css.map */
