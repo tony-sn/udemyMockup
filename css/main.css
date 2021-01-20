@@ -211,9 +211,26 @@ body {
 .carousel {
   background-image: url("../../img/cover.jpg");
   height: 500px;
+  position: relative;
 }
 
 .carousel .carousel__content {
   max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.carousel .carousel__content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

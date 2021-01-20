@@ -2,11 +2,19 @@
     background-image: url("../../img/cover.jpg");
     @extend %background--img;
     height: 500px;
+    position: relative;
     .carousel__content {
         max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        transform: translateY(-50%);
+
         h1 {
-            @mixin styleText() {
-            }
+            @include styleText($color-white-0, $fs-2, $fw-1);
+        }
+        p {
+            @include styleText($color-white-0, $fs-3, $fw-0);
         }
     }
 }
