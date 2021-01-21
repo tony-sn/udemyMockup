@@ -213,6 +213,51 @@ body {
   font-weight: normal;
 }
 
+.courses {
+  margin: 25px 0;
+}
+
+.courses .courses__content {
+  width: 90%;
+  margin: auto;
+}
+
+.courses .courses__content .courses__left {
+  background-color: rgba(20, 23, 28, 0.05);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.courses .courses__content .courses__left h2 {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.courses .courses__content #myTab {
+  margin-bottom: 25px;
+}
+
+.courses .courses__content #myTab .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.courses .courses__content #myTab .nav-link:hover {
+  border: 1px solid transparent;
+  color: #007791;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.courses .courses__content #myTab .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+  background-color: #fff;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
