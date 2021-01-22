@@ -366,4 +366,58 @@ body {
 .carousel .carousel__content .carousel__form .input-group {
   border-radius: 3px;
 }
+
+.card {
+  height: 320px;
+  margin-right: 1px;
+}
+
+.card .card-body .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card .card-body .card-text {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.card .card-body .card__star i {
+  color: #f4c150;
+  font-size: 13px -1;
+  font-weight: 900;
+}
+
+.card .card-body .card__star .card__rate {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card .card-body .card__star .card__total {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.card .card-body .card__price {
+  text-align: right;
+  padding: 7px 0;
+}
+
+.card .card-body .card__price span:first-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.card .card-body .card__price span:last-child {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 600;
+}
 /*# sourceMappingURL=main.css.map */
