@@ -1,4 +1,7 @@
 .owl-carousel {
+    button:focus {
+        outline: none;
+    }
     .owl-nav {
         button {
             &.owl-prev,
@@ -12,6 +15,10 @@
                 font-size: $fs-5 + 1;
                 position: absolute;
                 top: 35%;
+                &:hover {
+                    background-color: $color-white-0;
+                    color: $color-blue-0;
+                }
             }
             &.owl-prev {
                 left: -35px;
