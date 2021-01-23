@@ -17,8 +17,8 @@ body {
   background-color: #fff;
 }
 
-.courses__carousel button:focus {
-  outline: #fff;
+.owl-carousel button:focus {
+  outline: none;
 }
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
@@ -31,6 +31,11 @@ body {
   font-size: 25px;
   position: absolute;
   top: 35%;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #fff;
+  color: #007791;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
@@ -246,6 +251,11 @@ body {
   margin: auto;
 }
 
+.courses .courses__content .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .courses .courses__content .courses__left {
   background-color: rgba(20, 23, 28, 0.05);
   padding: 0 2rem;
@@ -280,6 +290,19 @@ body {
   border: none;
   border-bottom: 5px solid #007791;
   background-color: #fff;
+}
+
+.viewing {
+  padding: 22px 0;
+}
+
+.viewing .viewing__content {
+  width: 90%;
+  margin: auto;
+}
+
+.viewing .viewing__content h2 {
+  font-size: 20px;
 }
 
 .btn--white {
