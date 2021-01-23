@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+.courses__carousel button:focus {
+  outline: #fff;
+}
+
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   color: #007791;
   background-color: #fff;
