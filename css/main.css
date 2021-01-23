@@ -305,6 +305,30 @@ body {
   font-size: 20px;
 }
 
+.banners {
+  background: url("../img/udemy-purple-intersect.svg") 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 41%);
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+  height: 325px;
+  text-align: center;
+}
+
+.banners h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.banners p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.banners button {
+  margin: 10px 0;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
