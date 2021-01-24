@@ -35,3 +35,21 @@
         }
     }
 }
+
+.card--feedback {
+    height: 280px;
+    .card-body {
+        padding: 2rem;
+        .card__top {
+            display: flex;
+        }
+        .card__avatar {
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

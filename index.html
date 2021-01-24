@@ -553,7 +553,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card--feedback">
           <img src="./img/kh6.jpg" class="card-img-top" alt="kh15">
           <div class="card-body">
             <h5 class="card-title">The Python Mega Course: Build 10 Real World Applications</h5>
@@ -665,14 +665,30 @@
     <div class="students__content">
       <h2>What our students have to say</h2>
       <div class="owl-carousel owl-theme students__carousel">
-        <div class="card">
+        <div class="card card--feedback">
           <div class="card-body">
             <div class="card__top">
               <div class="card__avatar">
-                <img src="./img/" alt="">
+                <img src="./img/s1.jpg" alt="s1">
+              </div>
+              <div>
+                <p class="card__name">Oscar Javier</p>
+                <div class="card__star">
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
               </div>
             </div>
-            <p class="card-text"></p>
+            <p class="card-text">
+              I had a couple of months of experience trading without consistent results. After taking this course I'm
+              pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop
+              loss and take profit, how many lots to trade and much more...
+            </p>
           </div>
         </div>
       </div>
@@ -709,6 +725,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <!-- OWL CAROUSEL -->
   <script src="./js/owl.carousel.min.js">
   </script>
   <script>
@@ -728,10 +746,12 @@
         }
       }
     });
+
     $('.viewing__carousel').owlCarousel({
       loop: true,
       margin: 15,
       nav: true,
+      dots: false,
       responsive: {
         0: {
           items: 1
@@ -743,7 +763,25 @@
           items: 6
         }
       }
-    })
+    });
+
+    $('.students__carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
   </script>
 
   <!-- MAIN JS -->
