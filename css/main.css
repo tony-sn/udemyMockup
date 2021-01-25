@@ -367,6 +367,22 @@ body {
   margin-bottom: 20px;
 }
 
+.partners {
+  background-color: #f7f8fa;
+  padding-top: 20px;
+}
+
+.partners .partners__content {
+  text-align: center;
+}
+
+.partners .partners__content .partners__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
@@ -540,6 +556,7 @@ body {
 
 .card--feedback .card-body .card__top {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .card--feedback .card-body .card__avatar img {
@@ -551,5 +568,11 @@ body {
 
 .card--feedback .card-body .card__name {
   margin-bottom: 0;
+}
+
+.card--feedback .card-body .card-text {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */
