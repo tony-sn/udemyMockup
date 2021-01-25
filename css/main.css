@@ -383,6 +383,34 @@ body {
   margin: 0 auto;
 }
 
+.jobs {
+  background-color: #f7f8fa;
+}
+
+.jobs .jobs__content {
+  padding: 15px;
+}
+
+.jobs .jobs__content .row {
+  padding: 10px 0;
+}
+
+.jobs .jobs__content .row .bd--right {
+  border-right: 1px solid #dedfe0;
+}
+
+.jobs .jobs__content .jobs__items {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.jobs .jobs__content .jobs__items h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
