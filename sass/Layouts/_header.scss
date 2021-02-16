@@ -90,8 +90,59 @@
                 }
             }
             .myNavBar__btn {
+                display: flex;
                 &:hover {
                     background-color: transparent;
+                }
+                .btn--white {
+                    margin-right: $mg-0;
+                }
+                .button {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1355px) {
+        .myNavBar__right {
+            .navbar-nav {
+                .nav-item {
+                    white-space: nowrap;
+                    .nav-link {
+                        font-size: $fs-1 - 1;
+                    }
+                }
+            }
+        }
+        .myNavbar--reset {
+            padding-left: 0;
+        }
+    }
+
+    // 1200px
+    @include responsive("extra-large") {
+        .business-icon {
+            display: none;
+        }
+        .myNavBar__right {
+            .navbar-nav {
+                justify-content: space-around;
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .myNavBar__left {
+            .myNavBar__categories,
+            .myNavBar__form-search {
+                display: none;
+            }
+        }
+        .myNavBar__right {
+            .navbar-nav {
+                .myNavBar__btn {
+                    display: none;
                 }
             }
         }

@@ -201,8 +201,51 @@ body {
   font-size: 20px;
 }
 
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__btn {
+  display: flex;
+}
+
 .myNavBar .myNavBar__right .navbar-nav .myNavBar__btn:hover {
   background-color: transparent;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__btn .btn--white {
+  margin-right: 5px;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .myNavBar__btn .button {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1355px) {
+  .myNavBar .myNavBar__right .navbar-nav .nav-item {
+    white-space: nowrap;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .myNavBar .myNavbar--reset {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .myNavBar .business-icon {
+    display: none;
+  }
+  .myNavBar .myNavBar__right .navbar-nav {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myNavBar .myNavBar__left .myNavBar__categories,
+  .myNavBar .myNavBar__left .myNavBar__form-search {
+    display: none;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .myNavBar__btn {
+    display: none;
+  }
 }
 
 footer {
