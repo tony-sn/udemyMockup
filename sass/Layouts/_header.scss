@@ -57,6 +57,7 @@
                     position: absolute;
                     right: 0;
                     top: 60px;
+                    z-index: 2;
                     border-top: 1px solid $color-gray-1;
                     box-shadow: 0 4px 16px 0 $color-gray-5;
 
@@ -104,13 +105,17 @@
         }
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1355px) {
+    @media screen and (min-width: 1200px) and (max-width: 1375px) {
         .myNavBar__right {
             .navbar-nav {
                 .nav-item {
                     white-space: nowrap;
+                    text-align: center;
                     .nav-link {
                         font-size: $fs-1 - 1;
+                    }
+                    .overlay {
+                        white-space: normal;
                     }
                 }
             }
@@ -140,7 +145,10 @@
             }
         }
         .myNavBar__right {
+            width: 50%;
+            margin-left: auto;
             .navbar-nav {
+                text-align: center;
                 .myNavBar__btn {
                     display: none;
                 }
