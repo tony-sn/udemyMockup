@@ -23,4 +23,11 @@
             }
         }
     }
+
+    @include responsive("small") {
+        .carousel__content {
+            max-width: 400px;
+            left: 10%;
+        }
+    }
 }

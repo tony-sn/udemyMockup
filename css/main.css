@@ -362,6 +362,18 @@ footer .footer__bottom .nav-link {
   font-weight: normal;
 }
 
+@media screen and (max-width: 1200px) {
+  .intro .intro__content .intro__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
 .courses {
   margin: 25px 0;
 }
@@ -659,6 +671,13 @@ footer .footer__bottom .nav-link {
 
 .carousel .carousel__content .carousel__form .input-group {
   border-radius: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .carousel .carousel__content {
+    max-width: 400px;
+    left: 10%;
+  }
 }
 
 .card {
