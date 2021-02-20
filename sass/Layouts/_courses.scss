@@ -46,4 +46,12 @@
             }
         }
     }
+
+    @include responsive("medium") {
+        .courses__content {
+            .courses__left {
+                padding: $pd-3;
+            }
+        }
+    }
 }
