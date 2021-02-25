@@ -1,11 +1,14 @@
 // Change text in Card Title to ...
-{/* Ex: <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from SQL Beginner to Expert</h5> */}
+/* Ex: <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from SQL Beginner to Expert</h5> */
 
 // When all the website loads its scripts, call function
 window.addEventListener("load", function()  {
-    truncateCardTitle();    
+    truncateCardTitle();
 });
 
+/*
+Truncate Card Title
+ */
 function truncateCardTitle() {
     var cardList = document.getElementsByClassName("card-title");
     console.log(cardList);
@@ -24,3 +27,21 @@ function truncateString(str,num) {
         return str;
     }
 }
+
+/*
+Truncate Card Title
+ */
+
+/* Sidebar Mini */
+var toggleBtn = document.querySelector('.sidebarMini__btn');
+var sidebarMini = document.querySelector('.sidebarMini');
+var switchBtn = document.querySelector('#checkbox');
+
+
+toggleBtn.addEventListener('click', function() {
+    sidebarMini.classList.toggle('is-opened');
+});
+
+switchBtn.addEventListener('click', function() {
+    document.querySelector('body').classList.toggle('darkMode');
+});

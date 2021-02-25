@@ -69,6 +69,14 @@ body {
   width: 110px;
 }
 
+.myNavBar .myNavBar__left .navbar-brand .logo-black {
+  display: inline-block;
+}
+
+.myNavBar .myNavBar__left .navbar-brand .logo-white {
+  display: none;
+}
+
 .myNavBar .myNavBar__left .myNavBar__categories {
   flex-grow: 1;
   text-align: center;
@@ -827,6 +835,9 @@ footer .footer__bottom .nav-link {
   right: 0;
   background-color: #dedfe0;
   z-index: 400;
+  transform: translateX(100%);
+  transition: 0.5s;
+  border-left: 1px solid #dedfe0;
 }
 
 .sidebarMini .sidebarMini__btn {
@@ -840,6 +851,11 @@ footer .footer__bottom .nav-link {
   border-radius: 8px 0 0 8px;
   position: fixed;
   transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.sidebarMini .sidebarMini__btn:focus {
+  outline: none;
 }
 
 .sidebarMini .sidebarMini__content {
@@ -863,6 +879,10 @@ footer .footer__bottom .nav-link {
   display: none;
 }
 
+.sidebarMini .sidebarMini__content .switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
 .sidebarMini .sidebarMini__content .switch .slider {
   background-color: #cccccc;
   position: absolute;
@@ -871,6 +891,7 @@ footer .footer__bottom .nav-link {
   left: 0;
   bottom: 0;
   border-radius: 34px;
+  cursor: pointer;
 }
 
 .sidebarMini .sidebarMini__content .switch .slider::before {
@@ -883,5 +904,52 @@ footer .footer__bottom .nav-link {
   position: absolute;
   bottom: 4px;
   left: 4px;
+  transition: 0.5s;
+}
+
+.sidebarMini.is-opened {
+  transform: translateX(60%);
+}
+
+.darkMode .sidebarMini {
+  background-color: #152e4d;
+  color: #fff;
+  border-left-color: #152e4d;
+}
+
+.darkMode .sidebarMini .sidebarMini__btn {
+  background-color: #152e4d;
+  border-color: #152e4d;
+  color: #fff;
+}
+
+.darkMode .sidebarMini .sidebarMini__content .switch .slider {
+  background-color: #152e4d;
+  box-shadow: 0 0 2px 3px #344050;
+}
+
+body.darkMode {
+  color: #9da9bb;
+  background-color: #061325;
+}
+
+.darkMode .myNavBar {
+  background-color: #0e1c2f;
+}
+
+.darkMode .myNavBar .myNavBar__left .navbar-brand .logo-black {
+  display: none;
+}
+
+.darkMode .myNavBar .myNavBar__left .navbar-brand .logo-white {
+  display: inline-block;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__categories {
+  color: #9da9bb;
+}
+
+.darkMode .myNavBar .myNavBar__left i {
+  color: #d8e2ef;
 }
 /*# sourceMappingURL=main.css.map */
