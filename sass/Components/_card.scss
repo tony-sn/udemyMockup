@@ -2,6 +2,7 @@
     height: 320px;
     margin-right: 1px;
     .card-body {
+        padding: 1rem;
         .card-title {
             @include styleText($color-black-0, $fs-0, $fw-1);
         }

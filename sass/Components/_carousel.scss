@@ -17,7 +17,7 @@
             @include styleText($color-white-0, $fs-3, $fw-0);
         }
         .carousel__form {
-            @include styleFormSearch($color-white-0, $color-white-0, $color-white-0);
+            @include styleFormSearch($color-white-0, $color-white-0, $color-white-0, $color-black-light);
             & .input-group {
                 border-radius: 3px;
             }

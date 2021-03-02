@@ -327,6 +327,14 @@ footer .footer__bottom img {
   margin-right: 10px;
 }
 
+footer .footer__bottom .logo-black {
+  display: inline-block;
+}
+
+footer .footer__bottom .logo-white {
+  display: none;
+}
+
 footer .footer__bottom .nav-link {
   color: #007791;
   font-size: 13px;
@@ -506,11 +514,11 @@ footer .footer__bottom .nav-link {
   margin: 0 auto;
 }
 
-.categories h2 {
+.categories .categories__content h2 {
   font-size: 24px;
 }
 
-.categories .categories__items {
+.categories .categories__content .categories__items {
   padding: 15px;
   font-size: 18px;
   border: 1px solid rgba(20, 23, 28, 0.1);
@@ -518,12 +526,12 @@ footer .footer__bottom .nav-link {
   cursor: pointer;
 }
 
-.categories .categories__items:hover {
+.categories .categories__content .categories__items:hover {
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
 
 .students {
-  margin: 32px 0;
+  padding: 32px 0;
 }
 
 .students .students__content {
@@ -749,6 +757,10 @@ footer .footer__bottom .nav-link {
   margin-right: 1px;
 }
 
+.card .card-body {
+  padding: 1rem;
+}
+
 .card .card-body .card-title {
   color: #29303b;
   font-size: 15px;
@@ -949,7 +961,251 @@ body.darkMode {
   color: #9da9bb;
 }
 
-.darkMode .myNavBar .myNavBar__left i {
+.darkMode .myNavBar .myNavBar__left .myNavBar__categories i {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group {
+  background-color: #152e4d;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transition: none;
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control::placeholder {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus {
+  background-color: #132238;
+  border-top-color: #344050;
+  border-left-color: #344050;
+  border-bottom-color: #344050;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text {
+  background-color: #132238;
+  border-top-color: #344050;
+  border-right-color: #344050;
+  border-bottom-color: #344050;
+  color: #ec5252;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ec5252;
+}
+
+.darkMode .myNavBar .myNavBar__left .myNavBar__form-search .input-group .input-group-append .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .nav-item {
+  border: 1px solid transparent;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
+  color: #d8e2ef;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .nav-item:hover {
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .nav-item .overlay {
+  background-color: #0e1c2f;
+  border: 1px solid #344050;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .nav-item .overlay::before {
+  background-color: #0e1c2f;
+  border-top: 1px solid #344050;
+  border-left: 1px solid #344050;
+}
+
+.darkMode .myNavBar .myNavBar__right .navbar-nav .myNavBar__btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.darkMode .myNavBar .navbar-toggler {
+  background-color: #d8e2ef;
+}
+
+.darkMode .courses .courses__content .courses__left {
+  background-color: #132238;
+}
+
+.darkMode .courses .courses__content .courses__left h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .courses .courses__content #myTab .nav-link {
+  color: #9da9bb;
+}
+
+.darkMode .courses .courses__content #myTab .nav-link:hover {
+  color: #d8e2ef;
+}
+
+.darkMode .courses .courses__content #myTab .nav-link.active {
+  background-color: transparent;
+}
+
+.darkMode .courses .courses__content #myTab .nav-tabs {
+  border-bottom: 1px solid #344050;
+}
+
+.darkMode .categories .categories__content h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .categories .categories__content .categories__items {
+  background-color: #132238;
+  border-color: #344050;
+  box-shadow: 0 3px 1px 0 #152e4d;
+}
+
+.darkMode .categories .categories__content .categories__items:hover {
+  box-shadow: 0 0 3px 2px #152e4d;
+}
+
+.darkMode .card {
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .card .card-body .card-title {
+  color: #d8e2ef;
+}
+
+.darkMode .card .card-body .card-text {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__star .card__rate {
+  color: #d8e2ef;
+}
+
+.darkMode .card .card-body .card__star .card__total {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:first-child {
+  color: #9da9bb;
+}
+
+.darkMode .card .card-body .card__price span:last-child {
+  color: #d8e2ef;
+}
+
+.darkMode .card--feedback {
+  background-color: #0e1c2f;
+}
+
+.darkMode .card--feedback .card-body .card__name {
+  color: #d8e2ef;
+}
+
+.darkMode .btn--white:hover {
+  color: #d8e2ef;
+  background-color: #152e4d;
+  border: 1px solid #344050;
+}
+
+.darkMode .btn--red:hover {
+  color: #fff;
+  background-color: #e63757;
+  border: 1px solid #e63757;
+}
+
+.darkMode .btn--dropup {
+  color: #d8e2ef;
+  background-color: #152e4d;
+  border: 1px solid #344050;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.darkMode .btn--dropup:hover {
+  color: #d8e2ef;
+  background-color: #132238;
+  border: 1px solid #344050;
+}
+
+.darkMode .students {
+  background-color: #132238;
+}
+
+.darkMode .students__content h2 {
+  color: #d8e2ef;
+}
+
+.darkMode .partners {
+  background-color: #132238;
+}
+
+.darkMode .jobs {
+  background-color: #132238;
+}
+
+.darkMode .jobs .jobs__content .row .bd--right {
+  border-color: #344050;
+}
+
+.darkMode .jobs .jobs__content .jobs__items h2 {
+  color: #d8e2ef;
+}
+
+.darkMode footer .footer__top ul .nav-item .nav-link {
+  color: #d8e2ef;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu {
+  background-color: #132238;
+  border-color: #344050;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu .dropdown-item {
+  color: #d8e2ef;
+}
+
+.darkMode footer .footer__top .btn-group .dropdown-menu .dropdown-item:hover {
+  background-color: #152e4d;
+}
+
+.darkMode footer hr {
+  background-color: #344050;
+}
+
+.darkMode footer .footer__bottom {
+  color: #9da9bb;
+}
+
+.darkMode footer .footer__bottom .row .logo-black {
+  display: none;
+}
+
+.darkMode footer .footer__bottom .row .logo-white {
+  display: inline-block;
+}
+
+.darkMode footer .footer__bottom .row .nav-link {
   color: #d8e2ef;
 }
 /*# sourceMappingURL=main.css.map */
