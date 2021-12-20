@@ -1,6 +1,6 @@
 # scss
 
-![main](https://raw.githubusercontent.com/tony-sn/udemyMockup/main/img/UdemyMockupThumbnail.png){width=60%, height: auto}
+![main](https://raw.githubusercontent.com/tony-sn/udemyMockup/main/img/UdemyMockupThumbnail.png)
 
 About SCSS Coding
 
