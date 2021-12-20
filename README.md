@@ -1,4 +1,7 @@
 # scss
+
+![main](https://raw.githubusercontent.com/tony-sn/udemyMockup/main/img/UdemyMockupThumbnail.png){width=60%, height: auto}
+
 About SCSS Coding
 
 Hi, my name is Tung
