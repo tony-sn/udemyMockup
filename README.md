@@ -2,7 +2,7 @@
 
 ![main](https://raw.githubusercontent.com/tony-sn/udemyMockup/main/img/UdemyMockupThumbnail.png)
 
-About SCSS Coding
+## About SCSS Coding
 
 Hi, my name is Tung
 
